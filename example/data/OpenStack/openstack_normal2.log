@@ -1,0 +1,2 @@
+nova-compute.log.1.2017-05-17_12:02:35 2017-05-16 15:15:54.960 2931 INFO nova.compute.manager [req-7a738b84-d574-43c6-a6c4-68c164365101 e887c6de57b5411cb33a5943be2d3c1a 54fadb412c4e40cdbaed9335e4c35a9e - - -] [instance: 0f079bdd-4117-4f6a-8b49-f3fb720b483c] Took 0.54 seconds to deallocate network for instance.
+nova-compute.log.1.2017-05-17_12:02:35 2017-05-16 15:15:55.746 2931 WARNING nova.virt.libvirt.imagecache [req-addc1839-2ed5-4778-b57e-5854eb7b8b09 - - - - -] Unknown base file: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742
