@@ -51,12 +51,14 @@ if __name__ == '__main__':
     thres = args.threshold
     abnormal_has_anomaly = [1 if t['anomaly_cnt'] > thres else 0 for t in test_abnormal_list]
     abnormal_cnt_anomaly = [t['anomaly_cnt'] for t in test_abnormal_list]
+    logger.info(f"$$$$$$$$$ abnormal anomaly count {abnormal_has_anomaly}: {abnormal_cnt_anomaly} $$$$$$$$$")
     abnormal_predict = []
     for test_abnormal in test_abnormal_list:
         abnormal_predict += test_abnormal['predict_list']
 
     normal_has_anomaly = [1 if t['anomaly_cnt'] > thres else 0 for t in test_normal_list]
     normal_cnt_anomaly = [t['anomaly_cnt'] for t in test_normal_list]
+    logger.info(f"$$$$$$$$$ normal anomaly count {normal_has_anomaly}: {normal_cnt_anomaly} $$$$$$$$$")
     normal_predict = []
     for test_normal in test_normal_list:
         normal_predict += test_normal['predict_list']
